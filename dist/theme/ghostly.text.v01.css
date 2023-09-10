@@ -1,22 +1,20 @@
+/* https://codepen.io/cbanlawi/pen/MWbemYP */
+
 @font-face {
     font-family: 'Velodroma-SuperWide';
     src: url('/dist/theme/fonts/velodroma/Velodroma_SuperWide.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-    /* font-variant-alternates: normal; */
-    /* font-variant-alternates: styleset(004C); */
-    /* font-variant-alternates: styleset(nice-style); */
-    /* font-feature-settings: 'salt'; */
-    /* font-variant-alternates: stylistic(salt); */
   }
 
 span {
-  /* font-family: "Archivo Black", sans-serif; */
   font-family: Velodroma-SuperWide;
   /* background: #f4d03f; */
+  position: relative;
+  margin-top: 0%;
   display: flex;
   flex-direction: column;
-  height: 10vh;
+  height: 0vh;
   justify-content: center;
   align-items: center;
 }
@@ -24,16 +22,18 @@ span {
 .words {
   /* color: #f4d03f; */
   /* color: #f7f3de; */
-  /* color: #f7f2d3; */
-  color: #31EB44;
-  font-size: 0;
-  line-height: 1.5;
+  color: #f7f2d3;
+  /* color: #31EB44; */
+  /* font-size: 0; */
+  line-height: 2;
 }
 
 .words span {
-  font-size: 5rem;
+  font-size: 3rem;
   display: inline-block;
-  animation: move 3s ease-in-out infinite;
+  white-space: nowrap; 
+  /* display: inline-flex; */
+  animation: move 5s ease-in-out infinite;
 }
 
 @keyframes move {
@@ -71,3 +71,39 @@ span {
 .words span:nth-child(7) {
   animation-delay: 3s;
 }
+
+.words span:nth-child(8) {
+    animation-delay: 3.5s;
+  }
+  
+  .words span:nth-child(9) {
+    animation-delay: 4s;
+  }
+  
+  .words span:nth-child(10) {
+    animation-delay: 4.5s;
+  }
+  
+  .words span:nth-child(11) {
+    animation-delay: 5s;
+  }
+  
+  .words span:nth-child(12) {
+    animation-delay: 5.5s;
+  }
+  
+  .words span:nth-child(13) {
+    animation-delay: 6s;
+  }
+
+  .words span:nth-child(14) {
+    animation-delay: 6.5s;
+  }
+  
+  .words span:nth-child(15) {
+    animation-delay: 7s;
+  }
+  
+  .words span:nth-child(16) {
+    animation-delay: 7.5s;
+  }
