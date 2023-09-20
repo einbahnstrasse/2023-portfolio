@@ -18,7 +18,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   /* font-variant-alternates: styleset(004C); */
   /* font-variant-alternates: styleset(nice-style); */
   /* font-feature-settings: 'salt'; */
-  font-variant-alternates: stylistic(salt);
+  /* font-variant-alternates: stylistic(salt); */
 }
 
 
@@ -56,7 +56,19 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'NeueDINSemiWide-RegularWeb';
+  src: url('/dist/theme/fonts/NeueDINweb/NeueDINSemiWide-RegularWeb.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'PlantinMTProLight';
+  src: url('/dist/theme/fonts/plantin-mt-pro-cufonfonts/PlantinMTProLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 /*********************************************
@@ -64,10 +76,12 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  *********************************************/
 :root {
   --r-background-color: #f7f3de;
-  --r-main-font: Lato, sans-serif;
+  /* --r-main-font: Lato, sans-serif; */
+  --r-main-font: PlantinMTProLight;
   --r-main-font-size: 40px;
+  /* --r-main-font-size: 1em; */
   --r-main-color: #333;
-  --r-block-margin: 20px;
+  --r-block-margin: 40px;
   --r-heading-margin: 0 0 20px 0;
   /* --r-heading-font: League Gothic, Impact, sans-serif; */
   /* --r-heading-font: Florencesans-Outline-italics; */
